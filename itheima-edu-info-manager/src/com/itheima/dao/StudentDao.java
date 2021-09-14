@@ -36,7 +36,7 @@ public class StudentDao {
     public void delStudent(String DelId) {
         // look for the index of the given ID in the array.
         int index = getIndex(DelId);
-        System.out.println(index);
+        //System.out.println(index);
         StudentArr[index] = null;
         // del the students information according to the ID.
     }
