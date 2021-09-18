@@ -1,14 +1,14 @@
 package com.itheima.service;
 
+import com.itheima.dao.OtherStudentDao;
 import com.itheima.dao.StudentDao;
 import com.itheima.domain.Student;
 
 public class StudentService {
-    private StudentDao sd = new StudentDao();
+    private OtherStudentDao sd = new OtherStudentDao();
 
     public boolean addStudent(Student stu) {
         // pass the stu to Dao.
-        StudentDao sd = new StudentDao();
         return sd.addStudent(stu);
     }
 

@@ -1,9 +1,11 @@
 package com.itheima.entry;
 
-import com.itheima.controller.StudentController;
+import com.itheima.controller.OtherStudentController;
 import com.itheima.controller.TeacherController;
 
 import java.util.Scanner;
+
+//import com.itheima.controller.StudentController;
 
 public class InfoMangerEntry {
     public static void main(String[] args) {
@@ -17,7 +19,7 @@ public class InfoMangerEntry {
             // switch to different function.
             switch (choice) {
                 case "1":
-                    StudentController sContr = new StudentController();
+                    OtherStudentController sContr = new OtherStudentController();
                     sContr.start();
                     break;
                 case "2":
